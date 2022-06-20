@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dcdcf3;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav-logo {
+  height: 70px;
+  width: 70px;
+  margin: 10px;
+}
+
+#navbar-logo-div {
+  display: flex;
+  align-items: center;
+}
+
+#logo-heading {
+  margin: 10px;
+}
+
+#logo-heading-char {
+  color: #6495ed;
+}
+
+#navbar-link ul {
+  display: flex;
+  padding-right: 100px;
+}
+
+#navbar-link li {
+  margin: 15px;
+  font-size: 20px;
+  list-style-type: none;
+  font-family: "Red Hat Mono", monospace;
+}
+
+#navbar-link a {
+  text-decoration: none;
+  color: #6495ed;
+}
+
+#menu-btn i {
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+/* code for responsive website */
+@media screen and (max-width: 704px) {
+  #navbar ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background-color: #222268;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  #navbar ul li {
+    margin: 40px 0;
+  }
+
+  #navbar ul li a {
+    display: block;
+  }
+
+  #menu-btn i {
+    display: block;
+  }
+
+  #click :checked ~ul {
+    left: 0%;
+  }
+
+
+}
